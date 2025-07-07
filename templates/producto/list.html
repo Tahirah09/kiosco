@@ -1,0 +1,8 @@
+<h1>Lista de Producto</h1>
+<ul>
+{% for producto in producto %}
+<li>{{ producto.nombre }}</li>
+{% empty %}
+<li>No hay producto disponibles.</li>
+{% endfor %}
+</ul>

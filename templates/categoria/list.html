@@ -1,0 +1,8 @@
+<h1>Lista de Categoria</h1>
+<ul>
+{% for categoria in categoria %}
+<li>{{ categoria.nombre }}</li>
+{% empty %}
+<li>No hay categoria disponibles.</li>
+{% endfor %}
+</ul>
